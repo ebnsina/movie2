@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter');
+
+:root {
+    --primary-light: #74acc4;
+    --primary-dark: #529dbc;
+    --extend: #353b48;
+    --secondary-light: #282c34;
+    --secondary-dark: #20232a;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+
+a {
+    display: inline-block;
+    transition: all .2s;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+
+.movie-header {
+    background: var(--secondary-light);
+}
+
+.movie-header h1 {
+    font-size: 1.2rem;
+}
+
+.flag {
+    position: absolute;
+    top: 0.7rem;
+    right: 0.7rem;
+}
+
+.flag img {
+    width: 32px;
+    cursor: pointer;
+}
+
+.movie-menu {
+    background: var(--extend)
+}
+
+.movie-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.movie-menu a {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.movie-menu a:hover {
+    color: var(--primary-light);
+    text-decoration: none;
+}
+
+.movie-content {
+    background: var(--secondary-dark);
+}
+
+.poster {
+
+}
+
+.showtimes {
+
+}
+
+.search-form {
+    display: flex;
+}
+
+.search-form input {
+    border: solid 1px #fff;
+    width: 90%;
+    padding: .4rem 1rem;
+    border-top-left-radius: .2rem;
+    border-bottom-left-radius: .2rem;
+    transition: all .2s;
+}
+
+.search-form input:focus {
+    outline: none;
+}
+
+.search-form button {
+    background: var(--primary-dark);
+    border: solid 1px var(--primary-dark);
+    color: #fff;
+    width: 10%;
+    padding: .5rem 1rem;
+    border-top-right-radius: .2rem;
+    border-bottom-right-radius: .2rem;
+    transition: all .2s;
+}
+
+.search-meta p {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+
+.synopsis {
+
+}
+
+.synopsis-meta p:not(:last-child) {
+    margin-bottom: 0.4rem;
+}
+
+.synopsis-meta span {
+    color: var(--primary-dark);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.synopsis h3 {
+    text-decoration: underline;
+    letter-spacing: 1px;
+}
+
+.movie-footer {
+    background: var(--secondary-light);
+}
+
+.movie-footer .nav-tabs {
+    border-bottom: none !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.movie-footer .nav-tabs li {
+    background-color: transparent;
+    border-color: transparent;
+    color: #fff !important;
+}
+
+.movie-footer .nav-tabs a {
+    color: #6a7179;
+    cursor: pointer;
+}
+
+.movie-footer .nav-tabs a.active,
+.movie-footer .nav-tabs a:hover {
+    background-color: transparent;
+    border-color: transparent;
+    color: #fff !important;
+}
+
+
